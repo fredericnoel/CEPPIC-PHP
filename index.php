@@ -1,19 +1,9 @@
 <?php
 
-$resultat = "<ul>";
-
-$i = -128;
-
-while ($i <= 1257) {
-    if ($i % 7 === 0) {
-        $resultat .= "<li>";
-        $resultat .= $i;
-        $resultat .= "</li>";
-    }
-
-    $i++;
+function afficherMessage() {
+    echo "<p>Je suis un message</p>";
 }
 
-$resultat .= "</ul>";
-
-echo $resultat;
+afficherMessage();
+afficherMessage();
+afficherMessage();
