@@ -2,12 +2,16 @@
 
 $resultat = "<ul>";
 
-for ($i = -128 ; $i <= 1257 ; $i++) {
+$i = -128;
+
+while ($i <= 1257) {
     if ($i % 7 === 0) {
         $resultat .= "<li>";
         $resultat .= $i;
         $resultat .= "</li>";
     }
+
+    $i++;
 }
 
 $resultat .= "</ul>";
